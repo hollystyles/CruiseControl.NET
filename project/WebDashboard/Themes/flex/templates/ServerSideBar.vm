@@ -1,0 +1,22 @@
+<!-- ServerSideBar.vm: Start -->
+<ul class="sidebar-nav">
+  <li class="sidebar-brand">
+    <a href="http://www.cruisecontrolnet.org">CruiseControl.NET</a>
+  </li>
+  #foreach ($link in $links)
+  <li>
+    <a href="$link.Url" class="$link.LinkClass">$translations.Translate($link.Text)</a>
+  </li>
+  #end
+  #if ($showCategories)
+  <li>
+    <b>$translations.Translate("Categories")</b> (<a href="$serverlink.Url">$translations.Translate("All")</a>)
+  </li>
+  #foreach ($categorylink in $categorylinks)
+  <li>
+    <a href="$categorylink.Url">$categorylink.Text</a>
+  </li>
+  #end
+  #end
+</ul>
+<!-- ServerSideBar.vm: End -->

@@ -1,0 +1,21 @@
+<!-- TopMenu.vm: Start -->
+<ol class="breadcrumb">
+	<li><a href="$farmLink.Url">$translations.Translate("Dashboard")</a></li>
+	#if ( $serverName == "" )
+		#if ($categoryName != "")
+		<li><a href="$categoryLink.Url">$categoryLink.Text</a></li>
+		#end
+	#else
+		<li><a href="$serverLink.Url">$serverLink.Text</a></li>
+		#if ($categoryName != "")
+			<li><a href="$categoryLink.Url">$categoryLink.Text</a></li>
+		#end
+		#if ( ! ( $projectName == "" ) )
+			<li><a href="$projectLink.Url">$projectLink.Text</a></li>
+			#if ( ! ( $buildName == "" ) )
+				<li><a href="$buildLink.Url">$buildLink.Text</a></li>
+			#end
+		#end
+	#end	
+</ol>
+<!-- TopMenu.vm: End -->

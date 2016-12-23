@@ -1,0 +1,40 @@
+﻿<package>
+  <name>flex Theme</name>
+  <description>The flex theme.</description>
+  <type>Plugin</type>
+  <group>Dashboard</group>
+  <folders>
+    <folder>
+      <location>Themes\flex</location>
+      <files>
+        <file>cruisecontrol.css</file>
+      </files>
+    </folder>
+    <folder>
+      <location>Themes\flex\images</location>
+      <files>
+      </files>
+    </folder>
+    <folder>
+      <location>Themes\flex\templates</location>
+      <files>
+        <file>BuildRows.vm</file>
+        <file>LoginAction.vm</file>
+        <file>ProjectGrid.vm</file>
+        <file>ProjectReport.vm</file>
+        <file>ProjectSideBar.vm</file>
+        <file>RecentBuilds.vm</file>
+        <file>ServerSideBar.vm</file>
+        <file>SiteTemplate.vm</file>
+        <file>TopMenu.vm</file>
+      </files>
+    </folder>
+  </folders>
+  <configuration>
+    <setting>
+      <path>/dashboard/plugins</path>
+      <name>customTemplates</name>
+      <value>themes/flex/templates</value>
+    </setting>
+  </configuration>
+</package>

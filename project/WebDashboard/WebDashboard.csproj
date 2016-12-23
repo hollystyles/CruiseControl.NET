@@ -36,6 +36,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -826,6 +827,8 @@
     <Content Include="packages\ServerConfig\Manifest.xml" />
     <Content Include="packages\ServerInformation\Manifest.xml" />
     <Content Include="packages\ServerLog\Manifest.xml" />
+    <Content Include="Themes\flex\cruisecontrol.css" />
+    <Content Include="Themes\flex\Manifest.xml" />
     <Content Include="Themes\liquidBlue\cruisecontrol.css" />
     <Content Include="Themes\liquidBlue\images\arrow.gif" />
     <Content Include="Themes\liquidBlue\images\bullet_black.png" />
@@ -909,6 +912,14 @@
     <None Include="templates\UserDiagnostics.vm" />
     <None Include="templates\UserList.vm" />
     <None Include="templates\UserNameLogin.vm" />
+    <Content Include="Themes\flex\templates\SiteTemplate.vm" />
+    <Content Include="Themes\flex\templates\TopMenu.vm" />
+    <Content Include="Themes\flex\templates\ServerSideBar.vm" />
+    <Content Include="Themes\flex\templates\LoginAction.vm" />
+    <Content Include="Themes\flex\templates\ProjectGrid.vm" />
+    <Content Include="Themes\flex\templates\ProjectSideBar.vm" />
+    <Content Include="Themes\flex\templates\RecentBuilds.vm" />
+    <Content Include="Themes\flex\templates\BuildRows.vm" />
     <None Include="Themes\liquidBlue\templates\SiteTemplate.vm" />
     <None Include="Themes\liquidBlue\templates\TopMenu.vm" />
     <None Include="Themes\noteWorthy\templates\SiteTemplate.vm" />
@@ -924,6 +935,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="Themes\flex\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -956,6 +968,6 @@ cp "$(SolutionDir)xsl"/* "$(ProjectDir)xsl"</PostBuildEvent>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
-  </ProjectExtensions>  
+  </ProjectExtensions>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
 </Project>
