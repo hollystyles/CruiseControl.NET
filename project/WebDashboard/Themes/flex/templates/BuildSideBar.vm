@@ -1,0 +1,10 @@
+<!-- BuildSideBar.vm: Start -->
+<ul class="sidebar-nav">
+	<li><a href="$latestLink.Url">$translations.Translate("Latest")</a></li>
+	<li><a href="$nextLink.Url">$translations.Translate("Next")</a></li>
+	<li><a href="$previousLink.Url">$translations.Translate("Previous")</a></li>
+	#foreach ($link in $links)
+	<li><a href="$link.Url" class="$link.LinkClass">$translations.Translate($link.Text)</a></li>
+	#end
+</ul>
+<!-- BuildSideBar.vm: End -->

@@ -16,9 +16,20 @@
       </files>
     </folder>
     <folder>
+      <location>Themes\flex\javascript</location>
+      <files>
+        <file>bootstrap.min.js</file>
+        <file>jquery-1.12.4.min.js</file>
+        <file>jquery-ui.min.js</file>
+        <file>jquery.tablesorter.js</file>
+      </files>
+    </folder>
+    <folder>
       <location>Themes\flex\templates</location>
       <files>
         <file>BuildRows.vm</file>
+        <file>BuildSideBar.vm</file>
+        <file>FarmSideBar.vm</file>
         <file>LoginAction.vm</file>
         <file>ProjectGrid.vm</file>
         <file>ProjectReport.vm</file>
@@ -27,6 +38,12 @@
         <file>ServerSideBar.vm</file>
         <file>SiteTemplate.vm</file>
         <file>TopMenu.vm</file>
+      </files>
+    </folder>
+    <folder>
+      <location>Themes\flex\xsl</location>
+      <files>
+        <file>BuildReport.xsl</file>
       </files>
     </folder>
   </folders>

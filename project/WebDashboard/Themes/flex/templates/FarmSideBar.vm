@@ -1,0 +1,18 @@
+<!-- FarmSideBar.vm: Start -->
+<ul class="sidebar-nav">
+	#foreach ($link in $links)
+	<li><a href="$link.Url" class="$link.LinkClass">$translations.Translate($link.Text)</a></li>
+	#end
+	<li><b>$translations.Translate("Servers")</b></li>
+	#foreach ($slink in $serverlinks)
+	<li><a href="$slink.Url" class="$slink.LinkClass">$slink.Text</a></li>
+	#end
+
+	#if ($showCategories)
+	<li><b>$translations.Translate("Categories")</b> (<a href="$farmLink.Url">All</a>)</li>
+	#foreach ($categorylink in $categorylinks)
+	<li><a href="$categorylink.Url">$categorylink.Text</a></li>
+	#end
+	#end
+</ul>
+<!-- FarmSideBar.vm: End -->

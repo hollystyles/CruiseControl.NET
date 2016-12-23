@@ -703,7 +703,6 @@
     <Content Include="javascript\jQuery.ccnet.js" />
     <Content Include="javascript\jquery.js" />
     <Content Include="javascript\jquery.metadata.js" />
-    <Content Include="javascript\jquery.tablesorter.js" />
     <Content Include="javascript\jQuery.timers.js" />
     <Content Include="javascript\theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="javascript\theme\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -827,8 +826,14 @@
     <Content Include="packages\ServerConfig\Manifest.xml" />
     <Content Include="packages\ServerInformation\Manifest.xml" />
     <Content Include="packages\ServerLog\Manifest.xml" />
+    <Content Include="Themes\flex\bootstrap.min.css" />
     <Content Include="Themes\flex\cruisecontrol.css" />
+    <Content Include="Themes\flex\javascript\bootstrap.min.js" />
+    <Content Include="Themes\flex\javascript\jquery-1.12.4.min.js" />
+    <Content Include="Themes\flex\javascript\jquery-ui.min.js" />
+    <Content Include="Themes\flex\javascript\jquery.tablesorter.js" />
     <Content Include="Themes\flex\Manifest.xml" />
+    <Content Include="Themes\flex\xsl\BuildReport.xsl" />
     <Content Include="Themes\liquidBlue\cruisecontrol.css" />
     <Content Include="Themes\liquidBlue\images\arrow.gif" />
     <Content Include="Themes\liquidBlue\images\bullet_black.png" />
@@ -858,6 +863,7 @@
       <LastGenOutput>Languages.fr.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Content Include="javascript\jquery.tablesorter.js" />
     <None Include="templates\ActionException.vm" />
     <None Include="templates\AddProject.vm" />
     <None Include="templates\AdministerDashboard.vm">
@@ -920,6 +926,9 @@
     <Content Include="Themes\flex\templates\ProjectSideBar.vm" />
     <Content Include="Themes\flex\templates\RecentBuilds.vm" />
     <Content Include="Themes\flex\templates\BuildRows.vm" />
+    <Content Include="Themes\flex\templates\ProjectReport.vm" />
+    <Content Include="Themes\flex\templates\FarmSideBar.vm" />
+    <Content Include="Themes\flex\templates\BuildSideBar.vm" />
     <None Include="Themes\liquidBlue\templates\SiteTemplate.vm" />
     <None Include="Themes\liquidBlue\templates\TopMenu.vm" />
     <None Include="Themes\noteWorthy\templates\SiteTemplate.vm" />

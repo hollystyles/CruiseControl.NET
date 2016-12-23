@@ -31,6 +31,7 @@
     margin-left: -250px;
     overflow-y: auto;
     background: #02290A;
+    color: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -50,6 +51,10 @@
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
+}
+
+#thoughtWorksLogo {
+    float: right;
 }
 
 /* Sidebar Styles */
@@ -92,12 +97,20 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+}
+
+.Green {
+    background-color: #5cb85c;
+}
+
+.Red {
+    background-color: #d9534f;
 }
 
 @media(min-width:768px) {

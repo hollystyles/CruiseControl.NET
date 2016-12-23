@@ -16,9 +16,6 @@
 			<a href="$changePassword.Url">$translations.Translate($changePassword.Text)</a>
 		</li>
 	#end
-	<li>
-		<a href="$applicationPath/doc/index.html">$translations.Translate("Documentation")</a>
-	</li>
 #end
 </ul>
 <!-- LoginAction.vm: End -->
